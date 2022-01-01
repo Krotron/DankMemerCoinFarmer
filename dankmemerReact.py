@@ -8,8 +8,8 @@ class MyClient(discord.Client):
     async def on_message(self, message):
         #if message.author == client.user:
         #    return
-        channel = client.get_channel(752051281950015570)
-        if message.author.id == 270904126974590976 and message.channel.id == 752051281950015570:
+        channel = client.get_channel(926436487757701160)
+        if message.author.id == 270904126974590976 and message.channel.id == 926436487757701160:
             #print("Message from {0.author}: {0.content}".format(message))
             message.content = message.content.replace('﻿','')
             if "god forbid" in message.content:
@@ -143,5 +143,5 @@ class MyClient(discord.Client):
                 await channel.send("why didn't I just go fishing")
             
 client = MyClient()
-token = os.getenv("DISCORD_BOT_TOKEN")
+token = os.getenv("OTIxNjI1MjY5ODQyODk4OTQ1.YcnHuQ.DGffyFiZS9ojhc0-Wg4RahN6pX4")
 client.run(token, bot = False)

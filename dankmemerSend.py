@@ -7,7 +7,7 @@ async def on_ready():
 
 @client.event
 async def on_connect():
-    channel = client.get_channel(752051281950015570)
+    channel = client.get_channel(926436487757701160)
     while True:
         await channel.send("pls hunt")
         time.sleep(5)
@@ -24,5 +24,5 @@ async def on_connect():
         await channel.send("pls dep all")
         time.sleep(15)
             
-token = os.getenv('DISCORD_BOT_TOKEN')
+token = os.getenv('OTIxNjI1MjY5ODQyODk4OTQ1.YcnHuQ.DGffyFiZS9ojhc0-Wg4RahN6pX4')
 client.run(token, bot = False)
